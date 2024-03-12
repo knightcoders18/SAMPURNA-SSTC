@@ -1,0 +1,13 @@
+.main{
+    height: 500px;
+    width: 100vw;
+    border: 2px solid orange;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.subbox{
+    height: 100px;
+    width: 100px;
+    border: 2px solid blue;
+}

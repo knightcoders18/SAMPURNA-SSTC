@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    animation: colorchange 9s ease-in-out infinite ;
+    animation-direction: alternate-reverse;
+    
+}
+@keyframes colorchange{
+    0%{
+        background-color: aqua;
+
+    }
+    35%{
+        background-color: rgba(0, 0, 255, 0.137);
+    }
+    70%{
+        background-color: rgba(255, 166, 0, 0.329);
+    }
+    100%{
+        background-color: #98d17ea3;
+    }
+}
+.container .logo{
+    position: absolute;
+    left: 8%;
+    top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(0, 0, 255, 0.75);
+    z-index: 999;
+}
+.navbar{
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#fdfefe ;
+    display: grid;
+    place-items: center;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row; 
+}
+.navbar ul li{
+    font-size: 20px;
+    margin: 0 45px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.navbar ul li a:hover{
+    color: #165397;
+}
+.navbar ul .logo{
+    height: 50px;
+    width: 120px;
+    position: absolute;
+    top: 20px;
+    right: 7%;
+    place-items: center;
+    background-color: #165397;
+    border-radius: 10px 20px;
+
+}
+.navbar ul .logo a{
+    color:#e9e9eb;
+}
+.navbar ul .logo a{
+    color:#e9e9eb;
+}
+.navbar ul .logo a:hover{
+    background-color: black;
+}
+.image{
+    position: absolute;
+    top: calc(66% - 300px);
+    right: 2%;
+    z-index: 999;
+    
+    
+}
+.image img{
+    height: 400px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.content{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 996;
+}
+.content:hover h2{
+    color: black;
+    transition: 00.5s;
+}
+.content:hover h4{
+    color:#165397;
+    transition: 00.5s;
+}
+.content h2{
+    font-size: 150px;
+    color: #165397;
+}
+.content h4{
+    font-size: 100px;
+    color: #165397;
+}
+.icons{
+    height: 500px;
+    width: 60px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 250px);
+    background: #165397;
+    border-radius: 0 60px 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    z-index: 998;
+    
+
+}
+
+.icons i{
+    padding: 18px;
+}
+.icons:hover{
+    background: rgba(0, 0, 0, 0.9);
+}

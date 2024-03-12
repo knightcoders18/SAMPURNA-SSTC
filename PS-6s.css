@@ -1,0 +1,12 @@
+div{
+    background-color: cornflowerblue;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}

@@ -1,0 +1,16 @@
+.image{
+    height: 600px;
+    width: 600px;
+    border: 2px solid black;
+    background-image: url(sideimage.png);
+    background-size: cover;
+    animation: change 5s infinite ease-in-out;
+}
+@keyframes change{
+    0%{
+        background-image: url(sideimage.png);
+    }
+    100%{
+        background-image: url(sideimage.png);
+    }
+}
